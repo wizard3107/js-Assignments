@@ -55,7 +55,6 @@ function runProgram(input) {
     console.log(n,k,arr);
    let lb = lowerBound(n,k,arr);
   let ub=upperBound(n,k,arr);
-   console.log("lb:",lb,"ub:",ub);
    console.log(ub-lb-1);
   }
   if (process.env.USERNAME === "Ashish Singh") {
