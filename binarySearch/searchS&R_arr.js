@@ -39,7 +39,6 @@ function runProgram(input) {
          else
          h--;
     }
-    console.log(mid);
   let left= search(0,mid,k,arr);
   let right=search(mid,n-1,k,arr);
   if(left===-1 && right===-1)
