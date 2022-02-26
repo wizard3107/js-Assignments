@@ -1,3 +1,4 @@
+// function to find the first smaller element than k
 function lowerBound(n,k,arr)
 {
   let l=0,h=n-1;
@@ -17,19 +18,17 @@ function lowerBound(n,k,arr)
       lb=mid;
       l=mid+1;
     }
-    console.log("l:",l,"h:",h,"mid:",mid);
-  //  console.log("lb:",lb);
   }
   return lb
   
 }
+// function to find the first greater no. than k
 function upperBound(n,k,arr){
   let l=0,h=n-1;
   let ub=n;
   while(l<=h)
   {
     let mid=Math.floor(l+(h-l)/2)
-  //  console.log("l:",l,"h:",h);
   console.log("l:",l,"h:",h,"mid:",mid);
 
     if(arr[mid]<=k)
@@ -40,7 +39,6 @@ function upperBound(n,k,arr){
       ub=mid
       h=mid-1;
     }
-    //console.log("ub:",ub);
 
   }
 
