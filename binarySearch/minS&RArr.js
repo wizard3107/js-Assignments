@@ -8,7 +8,6 @@ function runProgram(input) {
   while(l<=h)
   {
        mid=Math.floor(l+(h-l)/2);
-       console.log("l:",l,"h:",h,"mid:",mid)
       if(arr[mid]>arr[h])
       {
           l=mid+1;
